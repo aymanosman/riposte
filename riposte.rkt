@@ -113,7 +113,7 @@
     (exit 1))
 
   (define (lint-complain-and-die! e)
-    (displayln (format "~a is a malformed Riposte script.")
+    (displayln (format "~a is a malformed Riposte script." file-to-process)
                (current-error-port))
     (exit 1))
 
